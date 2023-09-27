@@ -1,5 +1,254 @@
+/* #Desenvolved_by_Pedro_Vasco */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+}
+
+.navbar .logo a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #2a799f;
+    font-size: 1.2;
+}
+
+.navbar .nav-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    margin: 0 5px;
+    font-weight: 600;
+}
+
+.container{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .content1{
+    background-color:#f0ecec;
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.container .content1 .title{
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 30px 0;
+}
+
+.container .content1 .title span{
+    color: #2a799f;
+}
+
+.container .content1 .text{
+    padding: 0 100px;
+}
+
+.container .content1 .text p{
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.container .content2{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.container .content2 .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin:30px 20px;
+    padding: 20px;
+    width: 250px;
+}
+
+.container .content2 .card i{
+    font-size: 4rem;
+}
+
+.container .content2 .card p{
+    font-size: .8rem;
+    color: #989194;
+    font-weight: 600;
+}
+
+.container .content3{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background-color:#f0ecec;
+    padding: 0 40px;
+}
+
+.container .content3 .image-container {
+    width: 30%;
+    padding: 20px;
+    margin: 20px 10px;
+}
+
+.container .content3 .image-container img{
+    width: 100%;
+}
+
+.container .content3 .text-container{
+    width: 40%;
+    padding: 20px;
+    margin: 20px 10px;
+}
+
+.container .content3 .text-container .title{
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #000;
+}
+
+.container .content3 .text-container .text{
+    font-weight: 500;
+    color: #989194;
+}
+
+.container .content4{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container .content4 .card{
+    width: 20%;
+    padding: 20px;
+    background-color: #094865;
+    color: #fff;
+    margin: 20px 10px;
+    font-weight: 500;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.container .content4 .card:first-child{
+    background-color: #ff0000;
+}
+
+.container .content4 .card:last-child{
+    background-color: #36b23a;
+}
+
+.container .content5{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #f0ecec;
+}
+
+.container .content5 .title{
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin: 20px 0;
+}
+
+.container .content5 .skills{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+    padding-bottom: 20px;
+}
+
+.container .content5 .skills .skill{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+}
+
+.container .content5 .skills .skill .text-skill{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 10px;
+    width: 20%;
+}
+
+.container .content5 .skills .skill  .progress{
+    width: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.container .content5 .skills .skill .progress .progress-bar{
+    color: white;
+    font-weight: 600;
+    padding-right: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.footer{
+    width: 100%;
+    height: 70px;
+    background-color: #040404;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    font-size: .6rem;
+}
+
+.footer .dev a{
+    text-decoration: none;
+    color: #094865;
+    font-size: 1rem;
 }
